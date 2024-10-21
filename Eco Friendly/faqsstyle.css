@@ -1,0 +1,319 @@
+*
+{
+    margin:0%;
+    pad: 0%;
+    box-sizing: border-box;
+}
+
+html,body
+{
+    width:100%;
+    height:100%;
+}
+
+*
+{
+    margin:0%;
+    pad: 0%;
+    box-sizing: border-box;
+}
+
+html,body
+{
+    width:100%;
+    height:100%;
+}
+
+
+body.loaded {
+    opacity: 1;
+}
+
+.nav-item a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-item p {
+    margin: 10px;
+}
+
+.navbar {
+    background-color: rgb(132, 190, 4);
+}
+
+
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-container input {
+    padding-left: 30px;
+
+}
+
+.search-container i {
+    position: absolute;
+    left: 10px;
+    color: gray;
+
+}
+
+.search-container input[type="text"]:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.connect {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.connect a {
+
+    color: inherit;
+    text-decoration: none;
+    font-size: xx-large;
+    margin: 2px;
+}
+
+.connect p {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+#navcopy {
+    height: 117px;
+}
+
+
+
+#animated-questionmark {
+    position: fixed;
+    right: 20px;  /* Position it on the right side */
+    bottom: 20px; /* Position it on the bottom side */
+    z-index: 1000; /* Ensure it's above other elements */
+    font-size: 500px; /* Adjust the size of the question mark */
+    color: rgb(132, 190, 4); /* Customize color */
+    cursor: pointer;
+    animation: bounceRotate 3s infinite; /* Infinite bouncing and rotating animation */
+   
+}
+
+
+@media (max-width: 480px) {
+    #animated-questionmark {
+        position: fixed;
+        right: 10px;  /* Position it on the right side with less margin */
+        bottom: 10px; /* Position it on the bottom side with less margin */
+        z-index: 1000; /* Ensure it's above other elements */
+        font-size: 120px; /* Adjust the size of the question mark for mobile */
+        color: rgb(132, 190, 4); /* Customize color */
+        cursor: pointer;
+        animation: bounceRotate 3s infinite; /* Infinite bouncing and rotating animation */
+    }
+}
+
+
+@keyframes bounceRotate {
+
+    0%,20%,40%,60%,80%
+    {
+        transform: translateY(0px);
+        color: black;
+    }
+    
+    10% {
+        transform: translateY(-20px); /* First upward bounce */
+        color: rgb(132, 190, 4);
+    }
+    30% {
+        transform: translateY(-20px); /* Higher bounce */
+        color: rgb(132, 190, 4);
+    }
+    50% {
+        transform: translateY(-20px); /* Slight upward bounce */
+        color: rgb(132, 190, 4);
+    }
+    70% {
+        transform: translateY(-20px); /* Back to original position */
+        color: rgb(132, 190, 4);
+    }
+    90% {
+        transform: translateY(0) rotate(-180deg); 
+        color: rgb(132, 190, 4);
+    }
+    
+    100% {
+        transform: translateY(0) rotate(-360deg); 
+        color: rgb(132, 190, 4);
+    }
+
+}
+
+
+
+
+.faq-section
+{
+    padding: 50px;
+}
+
+.col-sm-9
+{
+    background-color: rgb(247,255,230);
+}
+
+
+
+
+
+#footer {
+    margin: 10px;
+    padding: 70px;
+    width: 98.5%;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#subscribe input {
+    width: 100%;
+}
+
+.col-sm-2 a {
+    display: flex;
+    align-items: center;
+}
+
+.col-sm-2 a p {
+    margin: 10px;
+}
+
+.col-sm-2 a:hover {
+    text-decoration: underline;
+}
+
+.kmore {
+    margin-top: 20px;
+}
+
+.kmore a:hover {
+    text-decoration: underline;
+}
+
+#add a {
+    text-decoration: none;
+    color: white;
+}
+
+#ffollow {
+    border-right: 0.5px solid white;
+}
+
+#fcol1,#fcol2,#ffollow,#add
+{
+    margin-bottom: 50px;
+}
+
+#subscribe
+{
+    margin-bottom: 20px;
+}
+
+
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(133, 189, 4);
+    color: black;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: rgb(107 152 4);
+}
+
+@media (max-width: 480px) {
+    #img img {
+        width: 100%;
+        height: 45vh;
+    }
+
+    .text-overlay {
+        padding: 15px;
+        width: 100%;
+    }
+
+    .text-overlay h1 {
+        font-size: 0.9em;
+        
+    }
+
+    .text-overlay p {
+        font-size: 0.5em;
+        
+    }
+
+    .button {
+        padding: 4px 3px;
+       
+        font-size: 0.5em;
+      
+    }
+
+    #ffollow 
+    {
+        border-right: none !important;
+        border-bottom: 0.5px solid white;
+    }
+
+    #section4
+    {
+        margin-left:40px
+
+    }
+}
+
+
+.carousel-item button {
+    background-color: rgb(133, 189, 4);
+    margin: 10px;
+}
+
+.carousel-item button:hover {
+    background-color: rgb(107 152 4);
+    color: black;
+}
+
+.carousel-item button:hover {
+    background-color: rgb(107 152 4);
+    color: black;
+}
+
+#banner button,
+#banner-right button,
+.btn {
+    background-color: rgb(133, 189, 4);
+    margin-top: 10px;
+}
+
+#banner button:hover,
+#banner-right button:hover,
+.btn:hover {
+    background-color: rgb(107 152 4);
+    color: black;
+}
+
